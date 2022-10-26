@@ -6,6 +6,38 @@
     <link rel="stylesheet" href="css/login.css" />
     <title>Iniciar sesión | Bubble Tea</title>
   </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #fab993, #813811);
+      height: 100vh;
+      overflow: hidden;
+    }
+    input[type="submit"] {
+      width: 100%;
+      height: 50px;
+      border: 3px solid;
+      background: #ffffff;
+      border-radius: 25px;
+      font-size: 18px;
+      color: #68351a;
+      font-weight: 700;
+      cursor: pointer;
+      outline: none;
+    }
+    input[type="submit"]:hover {
+      border-color: #fab993;
+      transition: 0.5s;
+    }
+  </style>
   <body>
     <section class="sticky">
         <div class="bubbles">
@@ -22,7 +54,11 @@
           
         </div>
       </section>
-      
+    
+    <div class="logo">
+      <img src="img/BubbleTea.png" alt="Logo" width="65%">
+    </div>
+    
     <div class="center">
       <h1>Iniciar sesión</h1>
       <form method="get">
