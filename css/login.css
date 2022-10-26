@@ -190,30 +190,50 @@ form .txt_field {
       transform:translateX(-200px);
     }
   }
-/*BUBBLES LOGINS*/
+/*BUBBLE*/
 
 /*BLOQUE*/
-  .bloque{
-    display: inline-block;    
-    margin-top: auto;
-    margin-left: auto;
-  }
-/*BLOQUE*/
-/*IMAGEN*/
-  img{
-    margin-top: -5%;
-    margin-left: -20%;
-  }
-/*IMAGEN*/
-  
-/*DESCRIPCION*/
-  .descripcion{
-    display: block;
-    width: 100%; 
+  .elementos{
+    display: inline-block;  
+    margin-top: 5%;
+    width: 30%;
+    margin-left: -10%;
+    padding: 5%;
     
-  } 
-/*DESCRIPCION*/
+  }
+/*BLOQUE*/
+/*GRID*/
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: right; }
+.item4 { grid-area: footer; }
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main right right right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px ;
+  font-size: 30px;
+}
+
+.toppin{
+  width: 30%;
+}
+/*GRID*/
+.tamaño{
+  border: "2px solid black";
+  padding-bottom: 10%;
+}
 
 
 /*CHECKBOX*/
@@ -231,17 +251,3 @@ form .txt_field {
     border-color: blue;
   }
 /*CHECKBOX*/
-
-/*MENU*/
-.logo{
-  margin-left: 5%;
-  line-height: 80px;
-}
-.logo a{
-  color:white;
-  font-size: 30px;
-}
-.logo img{
-  width: 150px;
-}
-/*MENU*/
