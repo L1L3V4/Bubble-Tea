@@ -73,9 +73,18 @@ form .txt_field {
 .signup_link {
   margin: 30px 0;
 }
+
+.logo {
+  position: absolute;
+  top: 22%;
+  left: 59%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
 /*CSS LOGIN*/
 
-/*BUBBLE*/
+
+/*BUBBLES LOGIN*/
 
   .bubbles{
     position:absolute;
