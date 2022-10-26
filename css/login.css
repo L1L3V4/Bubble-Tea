@@ -222,7 +222,7 @@ form .txt_field {
 
 .grid-container > div {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px ;
   font-size: 30px;
 }
 
@@ -230,7 +230,10 @@ form .txt_field {
   width: 30%;
 }
 /*GRID*/
-
+.tamaño{
+  border: "2px solid black";
+  padding-bottom: 10%;
+}
 
 
 /*CHECKBOX*/
