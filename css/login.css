@@ -190,28 +190,29 @@ form .txt_field {
       transform:translateX(-200px);
     }
   }
-/*BUBBLE*/
+/*BUBBLES LOGINS*/
 
 /*BLOQUE*/
   .bloque{
-    display: inline-block;  
-    padding-top: 20%;
-    width: 50%;
+    display: inline-block;    
+    margin-top: auto;
+    margin-left: auto;
   }
 /*BLOQUE*/
 /*IMAGEN*/
   img{
-    width: 100%;
-    height: 100%;
+    margin-top: -5%;
+    margin-left: -20%;
   }
 /*IMAGEN*/
   
-/*BOTONES*/
-  .botones{
-    width: 40%;
-    margin-left: 40%;
+/*DESCRIPCION*/
+  .descripcion{
+    display: block;
+    width: 100%; 
+    
   } 
-/*BOTONES*/
+/*DESCRIPCION*/
 
 
 
@@ -230,3 +231,17 @@ form .txt_field {
     border-color: blue;
   }
 /*CHECKBOX*/
+
+/*MENU*/
+.logo{
+  margin-left: 5%;
+  line-height: 80px;
+}
+.logo a{
+  color:white;
+  font-size: 30px;
+}
+.logo img{
+  width: 150px;
+}
+/*MENU*/
