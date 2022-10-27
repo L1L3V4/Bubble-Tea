@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css" />
-    <title>Vainilla Latte | Bubble tea</title>
+    <title>Vainilla Latte | Bubble Tea</title>
+    <style>
+        input[type="submit"] {
+                width: 100%;
+                height: 50px;
+                border: 3px solid;
+                background: #ffffff;
+                border-radius: 25px;
+                font-size: 18px;
+                color: #68351a;
+                font-weight: 700;
+                cursor: pointer;
+                outline: none;
+            }
+            input[type="submit"]:hover {
+                border-color: #fab993;
+                transition: 0.5s;
+            }
+            .listo{
+                margin-top: 10%;
+                width: 50%;
+                position: center;
+                padding-left: 26%;
+            }
+    </style>
 </head>
+
 <body>
     
     <div class ="grid-container">
@@ -18,19 +43,35 @@
         <div class = "item3">
             <h1 id = "texto">Vainilla Cafe Latte</h1>
             <p>Café latte acompañado de aroma de vainilla junto al toppin a elegir</p>
+            <h2>Tamaño</h2>
             <form id ="tamaño">
-                <input type="radio" class ="tamaño" name="tamaño" > Mediano
-                <input type="radio" class ="tamaño" name="tamaño" > Grande
+                <label class = "cosa">
+                    <input type="radio" class ="tamaño" name="tamaño" alt="Mediano" > <img src="./img/M.png" width="100" height="100">
+                </label>
+                <label class = "cosa">
+                    <input type="radio" class ="tamaño" name="tamaño" alt="Grande"> <img src="./img/L.png" width="100" height="100">
+                </label>
             </form>
+            <h2>Toppins</h2>
             <form>
-                <input type="radio" class ="toppin" name="toppin" >
-                <input type="radio" class ="toppin" name="toppin" >
-                <input type="radio" class ="toppin" name="toppin" >
+               <label class = "cosa">
+                    <input type="radio" class ="toppin" name="toppin" ><img src="./img/tapiocaazucarmoreno.png" width="100" height="100" alt="Azucar moreno">
+               </label >
+                <label class = "cosa">
+                    <input type="radio" class ="toppin" name="toppin" ><img src="./img/tapiocafresa.png" width="100" height="100">
+                </label>
+                <label class = "cosa">
+                    <input type="radio" class ="toppin" name="toppin" ><img src="./img/tapiocavainilla.png" width="100" height="100">
+                </label>
+                
+                
             </form>
-            <input type ="submit" name ="aceptar" value= "listo!" action ="mensajedecompra.html">
+            <form class ="listo" action="login.html">
+                 <input type ="submit" name ="aceptar" value= "listo!">
+             </form>          
         </div>
         <div class ="item4">
-            <p id = "u"></p>
+            <p id = "uwu"></p>
         </div>
        
     </div>

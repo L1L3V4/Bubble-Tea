@@ -223,9 +223,7 @@ form .txt_field {
   padding: 100px;
   padding-bottom: 20px;
 }
-#tamaño{
-  padding-bottom: 20px;
-}
+
 
 .grid-container > div {
   text-align: center;
@@ -243,21 +241,29 @@ form .txt_field {
 }
 
 
-/*CHECKBOX*/
-  .checkeable input {
-    display: none;
-  }
-  .checkeable img {
-    width: 100px;
-    border: 5px solid transparent;
-  }
-  .checkeable input {
-    display: none;
-  }
-  .checkeable input:checked  + img {
-    border-color: blue;
-  }
-/*CHECKBOX*/
+/*RADIOBUTTON*/
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 10px;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 5px solid grey;
+}
+.cosa{
+  margin-left: 20px;
+  
+}
+/*RADIOBUTTON*/
 
 /*MENU*/
 .logomenu{
