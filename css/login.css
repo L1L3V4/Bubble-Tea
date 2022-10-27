@@ -76,8 +76,8 @@ form .txt_field {
 
 .logo {
   position: absolute;
-  top: 22%;
-  left: 55%;
+  top: 21%;
+  left: 54%;
   transform: translate(-50%, -50%);
   width: 400px;
 }
@@ -258,3 +258,13 @@ form .txt_field {
     border-color: blue;
   }
 /*CHECKBOX*/
+
+/*MENU*/
+.logomenu{
+  margin-left:7%;
+  line-height: 50px;
+}
+.logomenu img{
+  width: 175px;
+}
+/*MENU*/
