@@ -215,9 +215,16 @@ form .txt_field {
     'main main main right right right'
     'footer footer footer footer footer footer';
   gap: 10px;
-  padding: 10px;
+  padding-top: 10px;
   text-align: center;
   
+}
+#texto{
+  padding: 100px;
+  padding-bottom: 20px;
+}
+#tamaño{
+  padding-bottom: 20px;
 }
 
 .grid-container > div {
