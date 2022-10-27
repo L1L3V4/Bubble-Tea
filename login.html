@@ -61,9 +61,9 @@
     
     <div class="center">
       <h1>Iniciar sesión</h1>
-      <form method="get">
+      <form method="get" id="formulario" name="formulario" action="FichaProducto.html">
         <div class="txt_field">
-          <input type="text" required />
+          <input type="text" required id="Usuario" name="Usuario" value=""/>
           <span></span>
           <label>Usuario</label>
         </div>
@@ -72,9 +72,10 @@
           <span></span>
           <label>Contraseña</label>
         </div>
-        <input type="submit" value="Acceder"/>
+        <input type="submit"id="acceder" value="Acceder"/>
         <div class="signup_link"></div>
       </form>
     </div>
+    <script src= "js/funciones.js"></script>
   </body>
 </html>
