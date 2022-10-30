@@ -57,6 +57,10 @@
                 position: center;
                 padding-left: 26%;
             }
+        th, td {
+            border: 4px solid rgb(255, 255, 255);
+            text-align: center;
+            }
     </style>
 </head>
 
@@ -78,50 +82,64 @@
         </label>
     </nav>
     
-    <div class ="grid-container">
-        <div class = "item1">0</div>
-        <div class = "item2">
-            <img src="img/caferecortado.png" alt="Cafe">
-
-        </div>
-        <div class = "item3">
-            <h1 id = "texto">Vainilla Cafe Latte</h1>
-            <p>Café latte acompañado de aroma de vainilla junto al toppin a elegir</p>
-            <h2>Tamaño</h2>
-            <form id ="tamaño">
-                <label class = "cosa">
-                    <input type="radio" class ="tamaño" name="tamaño" alt="Mediano" > <img src="./img/M.png" width="100" height="100">
-                </label>
-                <label class = "cosa">
-                    <input type="radio" class ="tamaño" name="tamaño" alt="Grande"> <img src="./img/L.png" width="100" height="100">
-                </label>
-            </form>
-            <h2>Toppins</h2>
-            <form >
-               <label class = "cosa" >
-                    <input type="radio" class ="toppin" name="toppin" ><img src="./img/tapiocaazucarmoreno.png" width="100" height="100">Azucar moreno
-                    
-               </label >
-                <label class = "cosa">
-                    <input type="radio" class ="toppin" name="toppin" ><img src="./img/tapiocafresa.png" width="100" height="100">Fresa
-                    
-                </label>
-                <label class = "cosa" >
-                    <input type="radio" class ="toppin" name="toppin" ><img src="./img/tapiocavainilla.png" width="100" height="100">Vainilla
-                    
-                </label>
-                
-                
-            </form>
-            <form class ="listo" action="login.html">
-                 <input type ="submit" name ="aceptar" value= "listo!">
-             </form>          
-        </div>
-        <div class ="item4">
-            <p id = "uwu"></p>
-        </div>
-       
+    <center>
+    <div class ="item4">
+        <p id = "uwu">script</p>
     </div>
+
+    <table style="width:50%">
+        <tr>
+            <td rowspan="5" height="50" valign="bottom"><img src="img/cafevainilla.png" alt="Cafe" width="100%"></td>
+            <td rowspan="2" height="50" valign="top">
+                <h1 id = "texto">Vainilla Cafe Latte</h1>
+                <p>Café latte acompañado de aroma de vainilla junto al toppin a elegir</p>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td>
+                <br>
+                <h2>Tamaño</h2>
+                <br>
+                <form id ="tamaño">
+                    <label class = "cosa">
+                        <input type="radio" class ="tamaño" name="tamaño" alt="Mediano" > <img src="./img/M.png" width="100" height="100">
+                    </label>
+                    <label class = "cosa">
+                        <input type="radio" class ="tamaño" name="tamaño" alt="Grande"> <img src="./img/L.png" width="100" height="100">
+                    </label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+                <h2>Toppins</h2>
+                <br>
+                <form>
+                   <label class = "cosa" >
+                        <input type="radio" class ="toppin" name="toppin" ><img src="./img/tapiocaazucarmoreno.png" width="100" height="100">
+                   </label>
+                    <label class = "cosa">
+                        <input type="radio" class ="toppin" name="toppin" ><img src="./img/tapiocafresa.png" width="100" height="100">
+                    </label>
+                    <label class = "cosa" >
+                        <input type="radio" class ="toppin" name="toppin" ><img src="./img/tapiocavainilla.png" width="100" height="100">
+                    </label>
+                </form>
+                <br>
+                <form action="login.html">
+                    <input type ="submit" name ="aceptar" value= "Comprar">
+                    </form> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+        </tr>
+    </table>   
+    </center>
     <script src= "js/funciones.js"></script>
 </body>
 </html>
