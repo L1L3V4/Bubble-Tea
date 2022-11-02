@@ -1,3 +1,7 @@
+h1,h2,p{
+  font-family: "Open Sans Condensed";
+}
+
 /*CSS LOGIN*/
 .center {
   position: absolute;
@@ -202,39 +206,7 @@ form .txt_field {
     
   }
 /*BLOQUE*/
-/*GRID*/
-.item1 { grid-area: header; }
-.item2 { grid-area: main; }
-.item3 { grid-area: right; }
-.item4 { grid-area: footer; }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'main main main right right right'
-    'footer footer footer footer footer footer';
-  gap: 10px;
-  padding-top: 10px;
-  text-align: center;
-  
-}
-#texto{
-  padding: 100px;
-  padding-bottom: 20px;
-}
-
-
-.grid-container > div {
-  text-align: center;
-  padding: 20px ;
-  font-size: 30px;
-}
-
-.toppin{
-  width: 30%;
-}
-/*GRID*/
 .tamaño{
   border: "2px solid black";
   padding-bottom: 10%;
@@ -300,9 +272,10 @@ form .txt_field {
   padding: 5.3px;
   border-radius: 8px;
   color: #212121;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
   transition: 0.4s;
+  font-family: "Sacramento";
 }
 
 .button-1 {
@@ -315,3 +288,107 @@ form .txt_field {
   background-color: #c57d56;
 }
 /*MENU*/
+
+/*FORMULARIO CONTACTO*/
+
+#container {
+  border: solid 3px #320000;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+  font-family: 'Montserrat', Arial, sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+}
+
+.underline {
+  border-bottom: solid 2px #320000;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  text-align: center;
+}
+
+.icon {
+  display: block;
+  fill: #320000;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #320000;
+}
+
+:-moz-placeholder { 
+	color: #320000;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #320000;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #320000;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #320000;
+  color: #320000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #320000;
+  color: #F2F3EB;
+}
+
+.icon {
+    height: 35px;
+    width: 35px;
+}
+  
+.underline {
+    width: 53px;
+}
+/*FORMULARIO CONTACTO*/
