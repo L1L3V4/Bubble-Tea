@@ -7,110 +7,140 @@
     <title>Contacto | Bubble Tea</title>
     <style>
        /*MENU STYLE CSS*/
-       *{
+       font-size: 22px;
+        }
+    /*MENU STYLE CSS*/ 
+            
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+            body {
+            background: #f9dac8;
+            }
+
+            button {
+            overflow: visible;
+            }
+
+            button, select {
+            text-transform: none;
+            }
+
+            button, input, select, textarea {
+            color: #320000;
+            font: inherit;
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            list-style: none;
-            text-decoration: none;
-        }
-        nav{
-            background-color: #320000;
-            width: 100%;
-            height: 117px;
-        
-        }
-        nav ul{
-            float: right;
-            margin-right: 36%;
-        }
-        nav ul li {
-            display: inline-block;
-            line-height: 15vh;
-            margin-left: 35px;
-        }
-        nav ul li a{
-            color: white;
-            font-size: 22px;
-        }
-        /*MENU STYLE CSS*/
-        .plantilla{
-            text-align: center;
-            display: block;
-            padding: 30%;
-            padding-top: 10%;
-            margin-top: 10%;
-            margin-left: 60%;
-            position: right;
-            background: white;
-        }
-        body{
-            margin: 0;
-            padding: 0;
-            background-image: url("img/cafe5.jpg");
-            background-repeat: no-repeat;
-            height: 100vh;
-            overflow: hidden;
-        }
-        
-        input[type="submit"] {
-            width: 100%;
-            height: 50px;
-            border: 3px solid;
-            background: #ffffff;
-            border-radius: 25px;
-            font-size: 18px;
-            color: #68351a;
+            }
+
+            input {
+            line-height: normal;
+            }
+
+            textarea {
+            overflow: auto;
+            }
+
+            form {
+            padding: 37.5px;
+            margin: 50px 0;
+            }
+
+            h1 {
+            color: #320000;
+            font-size: 32px;
             font-weight: 700;
-            cursor: pointer;
-            outline: none;
-        }
-        input[type="submit"]:hover {
-            border-color: #fab993;
-            transition: 0.5s;
-        }
-        input[type="submit"] {
-                width: 100%;
-                height: 50px;
-                border: 3px solid;
-                background: #ffffff;
-                border-radius: 25px;
-                font-size: 18px;
-                color: #68351a;
-                font-weight: 700;
-                cursor: pointer;
-                outline: none;
-            }
-            input[type="submit"]:hover {
-                border-color: #fab993;
-                transition: 0.5s;
-            }
-            .listo{
-                margin-top: 10%;
-                width: 50%;
-                position: center;
-                padding-left: 26%;
-            }
-        th, td {
-            border: 4px solid rgb(255, 255, 255);
+            letter-spacing: 7px;
             text-align: center;
+            text-transform: uppercase;
             }
+
+            input[type='text'], [type='email'], select, textarea {
+            background: none;
+            border: none;
+            border-bottom: solid 2px #320000;
+            color: #320000;
+            font-size: 1.000em;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin: 0em 0 1.875em 0;
+            padding: 0 0 0.875em 0;
+            text-transform: uppercase;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            }
+
+            input[type='text']:focus, [type='email']:focus, textarea:focus {
+            outline: none;
+            padding: 0 0 0.875em 0;
+            }
+
+            select {
+            background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+            outline: none;
+            }
+
+            select::-ms-expand {
+            display: none;
+            }
+
+            textarea {
+	        line-height: 150%;
+	        height: 150px;
+	        resize: none;
+            width: 100%;
+            }
+            input[type='text'], [type='email'], select, textarea {
+            font-size: 0.875em;}
+    </style>
         </style>
 </head>
 <body>
     
-    <div class ="plantilla">
-        <form>
-            <h2>Nombre de Usuario</h2>
-            <input type="text" required>
-            <h2>Correo electronico</h2>
-            <input type="email" required>
-            <h2>Contraseña</h2>
-            <input type="password" required>
-            <h2>Motivo de la consulta</h2>
-            <input type="textbox" placeholder="Escriba la consulta" required>
-            <input type ="submit" value="Enviar">
-        </form>
+  
+      <div id="container">
+        <br>
+        <br>
+        <h1>¿Algún problema con su pedido?</h1>
+        <br>
+        <br>
+        <div class="underline">
+        </div>
+        <div class="icon_wrapper">
+          <br>
+          <br>
+          <p>&bull;CONTACTANOS&bull;</p>
+        </div>
+        <form action="#" method="post" id="contact_form">
+          <div class="name">
+            <label for="name"></label>
+            <input type="text" placeholder="Tú nombre..." name="name" id="name_input" required>
+          </div>
+          <div class="email">
+            <label for="email"></label>
+            <input type="email" placeholder="Tú correo electronico..." name="email" id="email_input" required>
+          </div>
+          <div class="telephone">
+            <label for="name"></label>
+            <input type="text" placeholder="Tú número de telefono..." name="telephone" id="telephone_input" required>
+          </div>
+          <div class="subject">
+            <label for="subject"></label>
+          </div>
+          <div class="message">
+            <label for="message"></label>
+            <textarea name="message" placeholder="Escribenos su número de pedido y explicanos que ha ocurrido..." id="message_input" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Enviar mensaje" id="form_button" />
+          </div>
     </div>
     <script>
         // When the user clicks on div, open the popup
