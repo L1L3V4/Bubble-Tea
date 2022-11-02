@@ -4,37 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css" />
     <title>Contacto | Bubble Tea</title>
     <style>
-        /*MENU STYLE CSS*/
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            list-style: none;
-            text-decoration: none;
-        }
-        nav{
-            background-color: #320000;
-            width: 100%;
-            height: 117px;
-        
-        }
-        nav ul{
-            float: right;
-            margin-right: 36%;
-        }
-        nav ul li {
-            display: inline-block;
-            line-height: 15vh;
-            margin-left: 35px;
-        }
-        nav ul li a{
-            color: white;
-            font-size: 22px;
-        }
-        /*MENU STYLE CSS*/
         /* Popup container - can be anything you want */
         .popup {
           position: relative;
@@ -127,24 +98,75 @@
             border-color: #fab993;
             transition: 0.5s;
         }
+        input[type="submit"] {
+                width: 100%;
+                height: 50px;
+                border: 3px solid;
+                background: #ffffff;
+                border-radius: 25px;
+                font-size: 18px;
+                color: #68351a;
+                font-weight: 700;
+                cursor: pointer;
+                outline: none;
+            }
+            input[type="submit"]:hover {
+                border-color: #fab993;
+                transition: 0.5s;
+            }
+            .listo{
+                margin-top: 10%;
+                width: 50%;
+                position: center;
+                padding-left: 26%;
+            }
+        th, td {
+            border: 4px solid rgb(255, 255, 255);
+            text-align: center;
+            }
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        nav{
+            background-color: #320000;
+            width: 100%;
+            height: 117px;
+        
+        }
+        nav ul{
+            float: right;
+            margin-right: 36%;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 15vh;
+            margin-left: 35px;
+        }
+        nav ul li a{
+            color: white;
+           
         </style>
 </head>
 <body>
-      <nav>
-            
-        <label for="" class="logomenu">
-            <img src="img/BubbleTeaRECORTADO.png" alt="Logo">
-        </label>
+    <nav>
+          
+      <label for="" class="logomenu">
+          <img src="img/BubbleTeaRECORTADO.png" alt="Logo">
+      </label>
 
-        <ul>
-            <li><a href="">Producto</a></li>
-            <li><a href="">Sobre Nosotros</a></li>
-            <li><a href="">Contactanos</a></li>
-        </ul>
+      <ul>
+          <li><a href="./FichaProducto.html">Producto</a></li>
+          <li><a href="./Aboutus.html">Sobre Nosotros</a></li>
+          <li><a href="./contacto.html">Contactanos</a></li>
+      </ul>
 
-        <label class="menu button-container">
-            <a href="login.html"><button class="button button-1">Hacer pedido 🛒</button></a>
-        </label>
+      <label class="menu button-container">
+          <a href="login.html"><button class="button button-1">Hacer pedido 🛒</button></a>
+      </label>
     </nav>
     <div class ="plantilla">
         <form>
