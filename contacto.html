@@ -6,63 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Bubble Tea</title>
     <style>
-        /* Popup container - can be anything you want */
-        .popup {
-          position: relative;
-          /* display: inline-block; */
-          padding-top: 10px;
-          cursor: pointer;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
+       /*MENU STYLE CSS*/
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
         }
+        nav{
+            background-color: #320000;
+            width: 100%;
+            height: 117px;
         
-        /* The actual popup */
-        .popup .popuptext {
-          visibility: hidden;
-          width: 160px;
-          background-color: #555;
-          color: #fff;
-          text-align: center;
-          border-radius: 6px;
-          padding: 8px 0;
-          position: absolute;
-          z-index: 1;
-          bottom: 125%;
-          left: 50%;
-          margin-left: -80px;
         }
-        
-        /* Popup arrow */
-        .popup .popuptext::after {
-          content: "";
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          margin-left: -5px;
-          border-width: 5px;
-          border-style: solid;
-          border-color: #555 transparent transparent transparent;
+        nav ul{
+            float: right;
+            margin-right: 36%;
         }
-        
-        /* Toggle this class - hide and show the popup */
-        .popup .show {
-          visibility: visible;
-          -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+        nav ul li {
+            display: inline-block;
+            line-height: 15vh;
+            margin-left: 35px;
         }
-        
-        /* Add animation (fade in the popup) */
-        @-webkit-keyframes fadeIn {
-          from {opacity: 0;} 
-          to {opacity: 1;}
+        nav ul li a{
+            color: white;
+            font-size: 22px;
         }
-        
-        @keyframes fadeIn {
-          from {opacity: 0;}
-          to {opacity:1 ;}
-        }
+        /*MENU STYLE CSS*/
         .plantilla{
             text-align: center;
             display: block;
@@ -124,50 +95,10 @@
             border: 4px solid rgb(255, 255, 255);
             text-align: center;
             }
-            *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            list-style: none;
-            text-decoration: none;
-        }
-        nav{
-            background-color: #320000;
-            width: 100%;
-            height: 117px;
-        
-        }
-        nav ul{
-            float: right;
-            margin-right: 36%;
-        }
-        nav ul li {
-            display: inline-block;
-            line-height: 15vh;
-            margin-left: 35px;
-        }
-        nav ul li a{
-            color: white;
-           
         </style>
 </head>
 <body>
-    <nav>
-          
-      <label for="" class="logomenu">
-          <img src="img/BubbleTeaRECORTADO.png" alt="Logo">
-      </label>
-
-      <ul>
-          <li><a href="./FichaProducto.html">Producto</a></li>
-          <li><a href="./Aboutus.html">Sobre Nosotros</a></li>
-          <li><a href="./contacto.html">Contactanos</a></li>
-      </ul>
-
-      <label class="menu button-container">
-          <a href="login.html"><button class="button button-1">Hacer pedido 🛒</button></a>
-      </label>
-    </nav>
+    
     <div class ="plantilla">
         <form>
             <h2>Nombre de Usuario</h2>

@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css" />
+    <link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
     <title>About Us | Bubble Tea</title>
 </head>
 <style>
+    h1{
+        font-family: 'Reenie Beanie';
+        font-size: 66px;
+    }
+    p{
+        font-family: 'Reenie Beanie';
+        font-size: 40px;
+    }
 /*MENU STYLE CSS*/
  *{
     margin: 0;
@@ -36,10 +45,32 @@
     font-size: 22px;
  }
  /*MENU STYLE CSS*/
+ .fondo{
+    background-image: url("img/cafe3.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+ }
+ .contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.derecha{
+    position: absolute;
+    top: 50%;
+    right: 70%;
+    transform: translate(-50%, -50%);
+}
 </style>
-<body>
+<body class="fondo">
     <nav>
-        
             <label for="" class="logomenu">
                 <img src="img/BubbleTeaRECORTADO.png" alt="Logo">
             </label>
@@ -54,5 +85,10 @@
                 <a href="login.html"><button class="button button-1">Hacer pedido 🛒</button></a>
             </label>
     </nav>
+    <table style="width:50%">
+        <tr>
+            <td rowspan="5" height="50" valign="bottom"><h1 id = "texto">BUBBLE TEA</h1> <br><p>LLevamos 10 años dedicando nuestro cariño a servir tés y cafés de la máxima calidad posible y por eso nos orgullecemos de ser el mejor bubble tea de Málaga. Importamos el té directamente de China, logrando ese sabor que nos diferencia</p></td>
+            <td rowspan="2" height="50" valign="top"></td>
+        </tr>
 </body>
 </html>
