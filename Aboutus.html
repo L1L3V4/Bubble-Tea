@@ -4,72 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css" />
-    <link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
-    <title>About Us | Bubble Tea</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Sobre Nosotros | Bubble Tea</title>
 </head>
 <style>
-    h1{
-        font-family: 'Reenie Beanie';
-        font-size: 66px;
-    }
-    p{
-        font-family: 'Reenie Beanie';
-        font-size: 40px;
-    }
-/*MENU STYLE CSS*/
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
- }
- nav{
-    background-color: #320000;
-    width: 100%;
-    height: 117px;
-   
- }
- nav ul{
-    float: right;
-    margin-right: 36%;
- }
- nav ul li {
-    display: inline-block;
-    line-height: 15vh;
-    margin-left: 35px;
- }
- nav ul li a{
-    color: white;
-    font-size: 22px;
- }
- /*MENU STYLE CSS*/
- .fondo{
-    background-image: url("img/cafe3.jpg");
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
- }
- .contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-.texto-encima{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-.derecha{
-    position: absolute;
-    top: 50%;
-    right: 70%;
-    transform: translate(-50%, -50%);
-}
+    /*MENU STYLE CSS*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        nav{
+            background-color: #320000;
+            width: 100%;
+            height: 117px;
+        
+        }
+        nav ul{
+            float: right;
+            margin-right: 32%;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 15vh;
+            margin-left: 40px;
+        }
+        nav ul li a{
+            color: white;
+            font-size: 35px;
+            font-family: "Sacramento";
+            
+        }
+    /*MENU STYLE CSS*/
+        body{
+                margin: 0;
+                padding: 0;
+                background-image: url("img/aboutus.webp");
+                background-repeat: no-repeat;
+                overflow: hidden;
+            }
+    /*CONTAINER CSS*/
+        p{
+            text-align: left;
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+        textarea {
+        overflow: auto;
+        }
+
+        form {
+        padding: 37.5px;
+        margin: 0px 0;
+        }
+
+        textarea {
+	    line-height: 150%;
+        height: 150px;
+        resize: none;
+        width: 100%;
+        }
 </style>
-<body class="fondo">
+<body>
     <nav>
             <label for="" class="logomenu">
                 <img src="img/BubbleTeaRECORTADO.png" alt="Logo">
@@ -85,10 +85,29 @@
                 <a href="login.html"><button class="button button-1">Hacer pedido 🛒</button></a>
             </label>
     </nav>
-    <table style="width:50%">
-        <tr>
-            <td rowspan="5" height="50" valign="bottom"><h1 id = "texto">BUBBLE TEA</h1> <br><p>LLevamos 10 años dedicando nuestro cariño a servir tés y cafés de la máxima calidad posible y por eso nos orgullecemos de ser el mejor bubble tea de Málaga. Importamos el té directamente de China, logrando ese sabor que nos diferencia</p></td>
-            <td rowspan="2" height="50" valign="top"></td>
-        </tr>
+    <div id="container2">
+        <br>
+        <br>
+        <h1 class="sacramento">Nuestro Té</h1>
+        <br>
+        <p>En asociación con el proveedor de té más reconocido de Asia, Bubble Tea se compromete a ofrecerle té de la mejor calidad.</p>
+        <br>
+        <p>Cada taza de té en Bubble Tea está recién preparada para garantizar una frescura y un sabor óptimos para nuestros clientes.</p>
+        <br>
+        <br>
+        <h1 class="sacramento">Nuestro Café</h1>
+        <br>
+        <p>Bubble Tea solo trabaja con proveedores de café locales que cultivan y producen café de manera sostenible.</p>
+        <br>
+        <p>Nuestro objetivo es proporcionar a nuestros clientes la experiencia de café más auténtica con la mejor calidad de café y aromas y sabores únicos.</p>
+        <br>
+        <br>
+        <h1 class="sacramento">Nuestro Compromiso</h1>
+        <br>
+        <p>En Bubble Tea nos comprometemos en servirles a nuestros clientes el mejor bubble tea que jamás hayan probado</p>
+        <br>
+        <br>
+      </div>
+    
 </body>
 </html>

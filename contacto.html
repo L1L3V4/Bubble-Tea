@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Bubble Tea</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Contáctanos | Bubble Tea</title>
     <style>
+
        /*MENU STYLE CSS*/
        *{
             margin: 0;
@@ -22,104 +26,173 @@
         }
         nav ul{
             float: right;
-            margin-right: 36%;
+            margin-right: 32%;
         }
         nav ul li {
             display: inline-block;
             line-height: 15vh;
-            margin-left: 35px;
+            margin-left: 40px;
         }
         nav ul li a{
             color: white;
-            font-size: 22px;
+            font-size: 35px;
+            font-family: "Sacramento";
+            
         }
         /*MENU STYLE CSS*/
-        .plantilla{
-            text-align: center;
-            display: block;
-            padding: 30%;
-            padding-top: 10%;
-            margin-top: 10%;
-            margin-left: 60%;
-            position: right;
-            background: white;
-        }
-        body{
-            margin: 0;
-            padding: 0;
+        /*FORMULARIO CSS*/
+        body {
             background-image: url("img/cafe5.jpg");
             background-repeat: no-repeat;
             height: 100vh;
             overflow: hidden;
         }
-        
-        input[type="submit"] {
-            width: 100%;
-            height: 50px;
-            border: 3px solid;
-            background: #ffffff;
-            border-radius: 25px;
-            font-size: 18px;
-            color: #68351a;
-            font-weight: 700;
-            cursor: pointer;
+
+        button {
+        overflow: visible;
+        }
+
+        button, select {
+        text-transform: none;
+        }
+
+        button, input, select, textarea {
+        color: #5d2417;
+        font: inherit;
+        margin: 0;
+        }
+
+        input {
+        line-height: normal;
+        }
+
+        textarea {
+        overflow: auto;
+        }
+
+        form {
+        padding: 37.5px;
+        margin: 0px 0;
+        }
+
+        h1 {
+        color: #5d2417;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 7px;
+        text-align: center;
+        text-transform: uppercase;
+        }
+
+        input[type='text'], [type='email'], select, textarea {
+        background: none;
+        border: none;
+        border-bottom: solid 2px #5d2417;
+        color: #5d2417;
+        font-size: 1.000em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 0em 0 1.875em 0;
+        padding: 0 0 0.875em 0;
+        text-transform: uppercase;
+        width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        input[type='text']:focus, [type='email']:focus, textarea:focus {
             outline: none;
+            padding: 0 0 0.875em 0;
         }
-        input[type="submit"]:hover {
-            border-color: #fab993;
-            transition: 0.5s;
+
+        textarea {
+	    line-height: 150%;
+        height: 150px;
+        resize: none;
+        width: 100%;
         }
-        input[type="submit"] {
-                width: 100%;
-                height: 50px;
-                border: 3px solid;
-                background: #ffffff;
-                border-radius: 25px;
-                font-size: 18px;
-                color: #68351a;
-                font-weight: 700;
-                cursor: pointer;
-                outline: none;
-            }
-            input[type="submit"]:hover {
-                border-color: #fab993;
-                transition: 0.5s;
-            }
-            .listo{
-                margin-top: 10%;
-                width: 50%;
-                position: center;
-                padding-left: 26%;
-            }
-        th, td {
-            border: 4px solid rgb(255, 255, 255);
-            text-align: center;
-            }
+
+        ::-webkit-input-placeholder {
+            color: #5d2417;
+        }
+
+        :-moz-placeholder { 
+            color: #5d2417;
+            opacity: 1;
+        }
+
+        ::-moz-placeholder {
+            color: #5d2417;
+            opacity: 1;
+        }
+
+        :-ms-input-placeholder {
+            color: #5d2417;
+        }
+
+        /*FORMULARIO CSS*/
+        
         </style>
 </head>
 <body>
+    <nav>
+        
+        <label for="" class="logomenu">
+            <img src="img/BubbleTeaRECORTADO.png" alt="Logo">
+        </label>
     
-    <div class ="plantilla">
-        <form>
-            <h2>Nombre de Usuario</h2>
-            <input type="text" required>
-            <h2>Correo electronico</h2>
-            <input type="email" required>
-            <h2>Contraseña</h2>
-            <input type="password" required>
-            <h2>Motivo de la consulta</h2>
-            <input type="textbox" placeholder="Escriba la consulta" required>
-            <input type ="submit" value="Enviar">
-        </form>
-    </div>
-    <script>
-        // When the user clicks on div, open the popup
-        function myFunction() {
-          var popup = document.getElementById("myPopup");
-          popup.classList.toggle("show");
-        }
-        </script>
-        <script> src= "js/funciones.js" </script>
-</body>
+        <ul>
+            <li><a href="./FichaProducto.html">Producto</a></li>
+            <li><a href="./Aboutus.html">Sobre Nosotros</a></li>
+            <li><a href="./contacto.html">Contactanos</a></li>
+        </ul>
 
+        <label class="menu button-container">
+            <a href="login.html"><button class="button button-1">Hacer pedido 🛒</button></a>
+        </label>
+    </nav>
+
+    <div id="container">
+        <br>
+        <h1>¿Algún problema con su pedido?</h1>
+        <br>
+        <br>
+        <div class="underline">
+        </div>
+        <br>
+        <form action="./contacto.html" method="" id="contact_form">
+          <div class="name">
+            <label for="name"></label>
+            <input type="text" placeholder="Su nombre..." name="name" id="name_input" required>
+          </div>
+          <div class="email">
+            <label for="email"></label>
+            <input type="email" placeholder="Su email..." name="email" id="email_input" required>
+          </div>
+          <div class="telephone">
+            <label for="name"></label>
+            <input type="text" placeholder="Su número de teléfono..." name="telephone" id="telephone_input" required>
+          </div>
+          <div class="message">
+            <label for="message"></label>
+            <textarea name="message" placeholder="Agrege su número de pedido y explicanos que ha pasado..." id="message_input" cols="30" rows="5" required></textarea>
+          </div>
+          <center>
+            <div class="submit">
+            <input type="submit" value="Enviar" id="form_button" />
+          </div>
+            </center>
+          
+        </form>
+      </div>
+    
+</body>
 </html>

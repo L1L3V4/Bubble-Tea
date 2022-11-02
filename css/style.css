@@ -1,6 +1,11 @@
 h1,h2,p{
   font-family: "Open Sans Condensed";
 }
+.sacramento{
+  font-family: "Sacramento";
+  font-size: 45px;
+  color: #5d2417;
+}
 
 /*CSS LOGIN*/
 .center {
@@ -196,23 +201,6 @@ form .txt_field {
   }
 /*BUBBLE*/
 
-/*BLOQUE*/
-  .elementos{
-    display: inline-block;  
-    margin-top: 5%;
-    width: 30%;
-    margin-left: -10%;
-    padding: 5%;
-    
-  }
-/*BLOQUE*/
-
-.tamaño{
-  border: "2px solid black";
-  padding-bottom: 10%;
-}
-
-
 /*RADIOBUTTON*/
 [type=radio] { 
   position: absolute;
@@ -235,11 +223,7 @@ form .txt_field {
   margin-left: 20px;
   
 }
-#uwu{
-  position: relative;
-  left: -40%;
-  top: -130%;
-}
+
 /*RADIOBUTTON*/
 
 /*MENU*/
@@ -292,31 +276,21 @@ form .txt_field {
 /*FORMULARIO CONTACTO*/
 
 #container {
-  border: solid 3px #320000;
+  border: solid 3px #5d2417;
   max-width: 768px;
-  margin: 60px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
   position: relative;
-  font-family: 'Montserrat', Arial, sans-serif;
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
+  font-family: 'Open Sans Condensed';
+  background-color: white;
 }
 
 .underline {
-  border-bottom: solid 2px #320000;
+  border-bottom: solid 2px #5d2417;
   margin: -0.512em auto;
   width: 80px;
-}
-
-.icon_wrapper {
-  text-align: center;
-}
-
-.icon {
-  display: block;
-  fill: #320000;
-  height: 50px;
-  margin: 0 auto;
-  width: 50px;
 }
 
 .email {
@@ -342,27 +316,27 @@ form .txt_field {
 }
 
 ::-webkit-input-placeholder {
-	color: #320000;
+	color: #5d2417;
 }
 
 :-moz-placeholder { 
-	color: #320000;
+	color: #5d2417;
 	opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: #320000;
+	color: #5d2417;
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #320000;
+	color: #5d2417;
 }
 
 #form_button {
   background: none;
-  border: solid 2px #320000;
-  color: #320000;
+  border: solid 2px #5d2417;
+  color: #5d2417;
   cursor: pointer;
   display: inline-block;
   font-family: 'Helvetica', Arial, sans-serif;
@@ -379,16 +353,52 @@ form .txt_field {
 }
 
 #form_button:hover {
-  background: #320000;
+  background: #5d2417;
   color: #F2F3EB;
-}
-
-.icon {
-    height: 35px;
-    width: 35px;
 }
   
 .underline {
     width: 53px;
 }
 /*FORMULARIO CONTACTO*/
+
+/*ABOUT US*/
+#container2 {
+  text-align: center;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  position: relative;
+  font-family: 'Open Sans Condensed';
+  background-color: white;
+}
+/*ABOUT US*/
+
+/*GRID*/
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  justify-content: end; 
+  grid-auto-flow: row;
+  grid-template-areas:
+    "cafe texto";
+}
+
+.cafe { grid-area: cafe; }
+
+.texto { grid-area: texto; }
+
+/*GRID*/
+
+/*SCRIPT CSS*/
+.script{
+  position: relative;
+  background-color: #c57d56;
+  color: white;
+  text-align: center; 
+}
+/*SCRIPT CSS*/
