@@ -237,14 +237,12 @@ form .txt_field {
 .menu{
   margin-left:87%;
   position: relative;
-  top: -165%;
+  top: -125%;
 }
 .button-container {
   display: flex;
   width: 10%;
-  min-height: 30vh;
-  justify-content: center;
-  align-items: center;
+  min-height: 20vh;
 }
 
 .button {
@@ -252,6 +250,12 @@ form .txt_field {
   background: none;
   border: none;
   outline: none;
+
+  position: absolute;
+  top: 1em;
+  right: 0;
+  bottom: 3em;
+  left: 0;
 
   padding: 5.3px;
   border-radius: 8px;
