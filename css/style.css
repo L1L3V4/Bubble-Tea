@@ -368,6 +368,7 @@ form .txt_field {
 
 /*ABOUT US*/
 #container2 {
+  width: 100%;
   text-align: center;
   max-width: 768px;
   margin-left: auto;
@@ -407,6 +408,7 @@ form .txt_field {
 }
 /*SCRIPT CSS*/
 
+/*FlexBox*/
 .FlexContainer {
   margin-left: 24%;
   display: flex;
@@ -426,3 +428,4 @@ form .txt_field {
   margin: 0px;
   text-align: center;
 }
+/*FlexBox*/
