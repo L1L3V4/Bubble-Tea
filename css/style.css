@@ -1,4 +1,4 @@
-h1,h2,p{
+h1,h2,h4,p{
   font-family: 'Open Sans', sans-serif;
 }
 .sacramento{
@@ -406,3 +406,23 @@ form .txt_field {
   text-align: center; 
 }
 /*SCRIPT CSS*/
+
+.FlexContainer {
+  margin-left: 24%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 60%;
+  overflow: auto;
+  flex-direction: row;
+  text-align: center;
+}
+
+.FlexContainer div {
+  width: 30%;
+  height: px;
+  margin: 0px;
+  text-align: center;
+}
