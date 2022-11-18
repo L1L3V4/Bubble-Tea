@@ -1,4 +1,4 @@
-h1,h2,h4,p{
+h1,h2,h3,h4,p{
   font-family: 'Open Sans', sans-serif;
 }
 .sacramento{
@@ -405,7 +405,8 @@ form .txt_field {
   background-color: #c57d56;
   color: white;
   text-align: center; 
-}
+  }
+
 /*SCRIPT CSS*/
 
 /*FlexBox*/
