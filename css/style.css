@@ -237,7 +237,7 @@ form .txt_field {
 .menu{
   margin-left:87%;
   position: relative;
-  top: -125%;
+  top: -110%;
 }
 .button-container {
   display: flex;
@@ -260,7 +260,7 @@ form .txt_field {
   padding: 5.3px;
   border-radius: 8px;
   color: #212121;
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
   transition: 0.4s;
   font-family: "Sacramento";
