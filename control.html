@@ -85,6 +85,19 @@
          
      }
      /*MENU STYLE CSS*/
+
+    table,tr,th,td{
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 30%; 
+    }
+
+    h1{
+        margin-left: 15%;
+    }
+    
     </style>
     
 </head>
@@ -96,7 +109,7 @@
         </label>
     
         <ul>
-            <li><a href="./FichaProducto.html">Producto</a></li>
+            <li><a href="./Listadoproductos.html">Productos</a></li>
             <li><a href="./Aboutus.html">Sobre Nosotros</a></li>
             <li><a href="./contacto.html">Contactanos</a></li>
         </ul>
@@ -105,9 +118,10 @@
             <a href="login.html"><button class="button button-1">Hacer pedido 🛒</button></a>
         </label>
     </nav>
-
-    <div id="wrapper">
-        <table align='center' cellspacing=3 cellpadding=5 id="data_table" border=1>
+    
+    <div id="wrapper" class="centrartabla">
+        <h1 class="sacramento">Admin Panel</h1>
+        <table cellspacing=3 cellpadding=5 id="data_table">
           <tr>
             <th>Producto</th>
             <th>Categoria</th>
@@ -118,11 +132,11 @@
           </tr>
   
           <tr id="row1">
-            <td id="Nombre1">Café Latte Vainilla</td>
-            <td id="Categoria1">Café</td>
-            <td id="Precio1">4.5</td>
+            <td id="Nombre1">Bubble Matcha</td>
+            <td id="Categoria1">Té</td>
+            <td id="Precio1">3</td>
             <td id="Disponibilidad1">OK</td>
-            <td id="Imagen1"></td>
+            <td id="Imagen1"><img src="img/tematcha.png" width="50%"></td>
             <td>
               <input type="button" id="edit_button1" value="Editar" class="edit" onclick="edit_row('1')">
               <input type="button" id="save_button1" value="Guardar" class="save" onclick="save_row('1')">
@@ -131,11 +145,11 @@
           </tr>
   
           <tr id="row2">
-            <td id="Nombre2">Café Latte Vainilla</td>
-            <td id="Categoria2">Café</td>
+            <td id="Nombre2">Bubble Chai</td>
+            <td id="Categoria2">Té</td>
             <td id="Precio2">4.5</td>
             <td id="Disponibilidad2">OK</td>
-            <td id="Imagen2"></td>
+            <td id="Imagen2"><img src="img/techai.png" width="50%"></td>
             <td>
                 <input type="button" id="edit_button2" value="Editar" class="edit" onclick="edit_row('2')">
                 <input type="button" id="save_button2" value="Guardar" class="save" onclick="save_row('2')">
@@ -144,17 +158,57 @@
           </tr>
   
           <tr id="row3">
-            <td id="Nombre3">Café Latte Vainilla</td>
-            <td id="Categoria3">Café</td>
+            <td id="Nombre3">Bubble Taro</td>
+            <td id="Categoria3">Té</td>
             <td id="Precio3">4.5</td>
             <td id="Disponibilidad3">OK</td>
-            <td id="Imagen3"></td>
+            <td id="Imagen3"><img src="img/tetaro.png" width="50%"></td>
             <td>
                 <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
                 <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
                 <input type="button" value="Eliminar" class="delete" onclick="delete_row('3')">
             </td>
           </tr>
+
+          <tr id="row3">
+            <td id="Nombre3">Caramelate</td>
+            <td id="Categoria3">Café</td>
+            <td id="Precio3">4.5</td>
+            <td id="Disponibilidad3">OK</td>
+            <td id="Imagen3"><img src="img/cafecaramelo.png" width="50%"></td>
+            <td>
+                <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
+                <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
+                <input type="button" value="Eliminar" class="delete" onclick="delete_row('3')">
+            </td>
+          </tr>
+
+          <tr id="row3">
+            <td id="Nombre3">Mocaccino</td>
+            <td id="Categoria3">Café</td>
+            <td id="Precio3">4.5</td>
+            <td id="Disponibilidad3">OK</td>
+            <td id="Imagen3"><img src="img/cafemocachino.png" width="50%"></td>
+            <td>
+                <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
+                <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
+                <input type="button" value="Eliminar" class="delete" onclick="delete_row('3')">
+            </td>
+          </tr>
+
+          <tr id="row3">
+            <td id="Nombre3">Late Supreme</td>
+            <td id="Categoria3">Café</td>
+            <td id="Precio3">4.5</td>
+            <td id="Disponibilidad3">OK</td>
+            <td id="Imagen3"><img src="img/cafeconleche.png" width="50%"></td>
+            <td>
+                <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
+                <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
+                <input type="button" value="Eliminar" class="delete" onclick="delete_row('3')">
+            </td>
+          </tr>
+
           <tr>
             <td><input type="text" id="nNombre"></td>
             <td><input type="text" id="nCategoria"></td>
@@ -166,6 +220,7 @@
   
         </table>
       </div>
+      <a href="index.html"><button type="submit">Volver</button></a>
       <script src= "js/funciones.js"></script>
 </body>
 </html>
