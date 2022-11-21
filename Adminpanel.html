@@ -16,6 +16,7 @@
          box-sizing: border-box;
          list-style: none;
          text-decoration: none;
+         font-family: 'Open Sans', sans-serif;
      }
      nav{
          background-color: #320000;
@@ -87,11 +88,18 @@
      /*MENU STYLE CSS*/
 
     table,tr,th,td{
-        border: 2px solid black;
-        border-radius: 10px;
+        border: 2px solid #5d2417;
+        background: #ddd;
+        border-radius: 1em;
         text-align: center;
         margin-left: 15%;
         margin-right: 30%; 
+        color: black;
+    }
+
+    tr, th{
+        background: #5d2417;
+        color: white;
     }
 
     h1{
@@ -137,7 +145,7 @@
             <td id="Categoria1">Té</td>
             <td id="Precio1">3</td>
             <td id="Disponibilidad1">OK</td>
-            <td id="Imagen1"><img src="img/tematcha.png" width="50%"></td>
+            <td id="Imagen1" class="fondoimagen"><img src="img/tematcha.png" width="50%"></td>
             <td>
               <input type="button" id="edit_button1" value="Editar" class="edit" onclick="edit_row('1')">
               <input type="button" id="save_button1" value="Guardar" class="save" onclick="save_row('1')">
@@ -150,7 +158,7 @@
             <td id="Categoria2">Té</td>
             <td id="Precio2">4.5</td>
             <td id="Disponibilidad2">OK</td>
-            <td id="Imagen2"><img src="img/techai.png" width="50%"></td>
+            <td id="Imagen2" class="fondoimagen"><img src="img/techai.png" width="50%"></td>
             <td>
                 <input type="button" id="edit_button2" value="Editar" class="edit" onclick="edit_row('2')">
                 <input type="button" id="save_button2" value="Guardar" class="save" onclick="save_row('2')">
@@ -163,7 +171,7 @@
             <td id="Categoria3">Té</td>
             <td id="Precio3">4.5</td>
             <td id="Disponibilidad3">OK</td>
-            <td id="Imagen3"><img src="img/tetaro.png" width="50%"></td>
+            <td id="Imagen3" class="fondoimagen"><img src="img/tetaro.png" width="50%"></td>
             <td>
                 <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
                 <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
@@ -176,7 +184,7 @@
             <td id="Categoria3">Café</td>
             <td id="Precio3">4.5</td>
             <td id="Disponibilidad3">OK</td>
-            <td id="Imagen3"><img src="img/cafecaramelo.png" width="50%"></td>
+            <td id="Imagen3" class="fondoimagen"><img src="img/cafecaramelo.png" width="50%"></td>
             <td>
                 <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
                 <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
@@ -189,7 +197,7 @@
             <td id="Categoria3">Café</td>
             <td id="Precio3">4.5</td>
             <td id="Disponibilidad3">OK</td>
-            <td id="Imagen3"><img src="img/cafemocachino.png" width="50%"></td>
+            <td id="Imagen3" class="fondoimagen"><img src="img/cafemocachino.png" width="50%"></td>
             <td>
                 <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
                 <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
@@ -202,7 +210,7 @@
             <td id="Categoria3">Café</td>
             <td id="Precio3">4.5</td>
             <td id="Disponibilidad3">OK</td>
-            <td id="Imagen3"><img src="img/cafeconleche.png" width="50%"></td>
+            <td id="Imagen3" class="fondoimagen"><img src="img/cafeconleche.png" width="50%"></td>
             <td>
                 <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
                 <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
@@ -215,8 +223,8 @@
             <td><input type="text" id="nCategoria"></td>
             <td><input type="text" id="nPrecio"></td>
             <td><input type="text" id="nDisp"></td>
-            <td><input type="file" id="nImg"></td>
-            <td><input type="button" class="add" onclick="add_row();" value="Añadir"></td>
+            <td class="fondoimagen"> <input type="file" id="nImg"></td>
+            <td ><input type="button" class="add" onclick="add_row();" value="Añadir"></td>
          </tr>
   
         </table>

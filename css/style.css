@@ -430,3 +430,29 @@ form .txt_field {
   text-align: center;
 }
 /*FlexBox*/
+
+/*Botón Compra*/
+.botoncompra {
+  width: 60%;
+  height: 50px;
+  border: 3px solid;
+  background: #ffffff;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #68351a;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+.botoncompra:hover {
+  border-color: #fab993;
+  transition: 0.5s;
+}
+/*Botón Compra*/
+
+/*Fondo imagen tabla*/
+.fondoimagen{
+  background: white;
+}
+/*Fondo imagen tabla*/
