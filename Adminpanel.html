@@ -105,6 +105,12 @@
     h1{
         margin-left: 15%;
     }
+    body.te td.te{
+        background-color: rgb(115, 145, 85);
+    }
+    body.cafe td.cafe{
+        background-color: rgb(155, 109, 66);
+    }
     
     </style>
     
@@ -130,6 +136,10 @@
     <div id="wrapper" class="centrartabla">
         <br>
         <h1 class="sacramento">Admin Panel  ════════════════════════════════╗</h1>
+
+        <label for="txtfiltro">Filtrar</label>
+        <input type="text" id="txtfiltro">
+
         <table cellspacing=3 cellpadding=5 id="data_table">
           <tr>
             <th>Producto</th>
@@ -142,7 +152,7 @@
   
           <tr id="row1">
             <td id="Nombre1">Bubble Matcha</td>
-            <td id="Categoria1">Té</td>
+            <td id="Categoria1" class="te" data-filter="te">Té</td>
             <td id="Precio1">3</td>
             <td id="Disponibilidad1">OK</td>
             <td id="Imagen1" class="fondoimagen"><img src="img/tematcha.png" width="50%"></td>
@@ -155,7 +165,7 @@
   
           <tr id="row2">
             <td id="Nombre2">Bubble Chai</td>
-            <td id="Categoria2">Té</td>
+            <td id="Categoria2" class="te" data-filter="te">Té</td>
             <td id="Precio2">4.5</td>
             <td id="Disponibilidad2">OK</td>
             <td id="Imagen2" class="fondoimagen"><img src="img/techai.png" width="50%"></td>
@@ -168,7 +178,7 @@
   
           <tr id="row3">
             <td id="Nombre3">Bubble Taro</td>
-            <td id="Categoria3">Té</td>
+            <td id="Categoria3" class="te" data-filter="te">Té</td>
             <td id="Precio3">4.5</td>
             <td id="Disponibilidad3">OK</td>
             <td id="Imagen3" class="fondoimagen"><img src="img/tetaro.png" width="50%"></td>
@@ -179,42 +189,42 @@
             </td>
           </tr>
 
-          <tr id="row3">
-            <td id="Nombre3">Caramelate</td>
-            <td id="Categoria3">Café</td>
-            <td id="Precio3">4.5</td>
-            <td id="Disponibilidad3">OK</td>
-            <td id="Imagen3" class="fondoimagen"><img src="img/cafecaramelo.png" width="50%"></td>
+          <tr id="row4">
+            <td id="Nombre4">Caramelate</td>
+            <td id="Categoria4" class="cafe" data-filter="cafe">Café</td>
+            <td id="Precio4">4.5</td>
+            <td id="Disponibilidad4">OK</td>
+            <td id="Imagen4" class="fondoimagen"><img src="img/cafecaramelo.png" width="50%"></td>
             <td>
-                <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
-                <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
-                <input type="button" value="Eliminar" class="delete" onclick="delete_row('3')">
+                <input type="button" id="edit_button4" value="Editar" class="edit" onclick="edit_row('4')">
+                <input type="button" id="save_button4" value="Guardar" class="save" onclick="save_row('4')">
+                <input type="button" value="Eliminar" class="delete" onclick="delete_row('4')">
             </td>
           </tr>
 
-          <tr id="row3">
-            <td id="Nombre3">Mocaccino</td>
-            <td id="Categoria3">Café</td>
-            <td id="Precio3">4.5</td>
-            <td id="Disponibilidad3">OK</td>
-            <td id="Imagen3" class="fondoimagen"><img src="img/cafemocachino.png" width="50%"></td>
+          <tr id="row5">
+            <td id="Nombre5">Mocaccino</td>
+            <td id="Categoria5" class="cafe" data-filter="cafe">Café</td>
+            <td id="Precio5">4.5</td>
+            <td id="Disponibilidad5">OK</td>
+            <td id="Imagen5" class="fondoimagen"><img src="img/cafemocachino.png" width="50%"></td>
             <td>
-                <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
-                <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
-                <input type="button" value="Eliminar" class="delete" onclick="delete_row('3')">
+                <input type="button" id="edit_button5" value="Editar" class="edit" onclick="edit_row('5')">
+                <input type="button" id="save_button5" value="Guardar" class="save" onclick="save_row('5')">
+                <input type="button" value="Eliminar" class="delete" onclick="delete_row('5')">
             </td>
           </tr>
 
-          <tr id="row3">
-            <td id="Nombre3">Late Supreme</td>
-            <td id="Categoria3">Café</td>
-            <td id="Precio3">4.5</td>
-            <td id="Disponibilidad3">OK</td>
-            <td id="Imagen3" class="fondoimagen"><img src="img/cafeconleche.png" width="50%"></td>
+          <tr id="row6">
+            <td id="Nombre6">Late Supreme</td>
+            <td id="Categoria6" class="cafe" data-filter="cafe">Café</td>
+            <td id="Precio6">4.5</td>
+            <td id="Disponibilidad6">OK</td>
+            <td id="Imagen6" class="fondoimagen"><img src="img/cafeconleche.png" width="50%"></td>
             <td>
-                <input type="button" id="edit_button3" value="Editar" class="edit" onclick="edit_row('3')">
-                <input type="button" id="save_button3" value="Guardar" class="save" onclick="save_row('3')">
-                <input type="button" value="Eliminar" class="delete" onclick="delete_row('3')">
+                <input type="button" id="edit_button6" value="Editar" class="edit" onclick="edit_row('6')">
+                <input type="button" id="save_button6" value="Guardar" class="save" onclick="save_row('6')">
+                <input type="button" value="Eliminar" class="delete" onclick="delete_row('6')">
             </td>
           </tr>
 

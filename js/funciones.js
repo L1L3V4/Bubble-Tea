@@ -1,8 +1,7 @@
 var sesion = sesion = document.getElementById("formulario");
-
-
 var URLactual = new URLSearchParams(window.location.search);
-
+let filters = document.querySelectorAll("[data-filter]");
+actualizar();
 var usuario = URLactual.get("Usuario");
 if(usuario != null){
     document.getElementById('uwu').textContent= "Bienvenid@ " + usuario + " !";
@@ -44,6 +43,7 @@ function save_row(no) {
     document.getElementById("Imagen" + no).innerHTML = imgHTML;
     document.getElementById("edit_button" + no).style.display = "inline";
     document.getElementById("save_button" + no).style.display = "inline";
+    actualizar();
 }
 
 function delete_row(no) {
@@ -58,11 +58,31 @@ function add_row() {
     var newI = document.getElementById("nImg").value;
     var table = document.getElementById("data_table");
     var table_len = (table.rows.length)-1;
-    console.log(table_len);
-    table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='Nombre" + table_len + "'>" + newN + "</td><td id='Categoria" + table_len + "'>" + newC + "</td><td id='Precio" + table_len + "'>" + newP + "</td><td id='Disponibilidad" + table_len + "'>" + newD + "</td><td id='Imagen" + table_len + "'>" + newI + "</td><td><input type='button' id='edit_button" + table_len + "' value='Editar' class='edit' onclick='edit_row(" + table_len + ")'> <input type='button' id='save_button" + table_len + "' value='Guardar' class='save' onclick='save_row(" + table_len + ")'> <input type='button' value='Eliminar' class='delete' onclick='delete_row(" + table_len + ")'></td></tr>";
+    console.log(newC);
+    if(newC=="Té"){
+        table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='Nombre" + table_len + "'>" + newN + "</td><td id='Categoria" + table_len + "'class='te' data-filter='te'>" + newC + "</td><td id='Precio" + table_len + "'>" + newP + "</td><td id='Disponibilidad" + table_len + "'>" + newD + "</td><td id='Imagen" + table_len + "'>" + newI + "</td><td><input type='button' id='edit_button" + table_len + "' value='Editar' class='edit' onclick='edit_row(" + table_len + ")'> <input type='button' id='save_button" + table_len + "' value='Guardar' class='save' onclick='save_row(" + table_len + ")'> <input type='button' value='Eliminar' class='delete' onclick='delete_row(" + table_len + ")'></td></tr>";
+    }else{
+        table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='Nombre" + table_len + "'>" + newN + "</td><td id='Categoria" + table_len + "'class='cafe' data-filter='cafe'>" + newC + "</td><td id='Precio" + table_len + "'>" + newP + "</td><td id='Disponibilidad" + table_len + "'>" + newD + "</td><td id='Imagen" + table_len + "'>" + newI + "</td><td><input type='button' id='edit_button" + table_len + "' value='Editar' class='edit' onclick='edit_row(" + table_len + ")'> <input type='button' id='save_button" + table_len + "' value='Guardar' class='save' onclick='save_row(" + table_len + ")'> <input type='button' value='Eliminar' class='delete' onclick='delete_row(" + table_len + ")'></td></tr>";
+    }
+    
     document.getElementById("nNombre").value = "";
     document.getElementById("nProducto").value = "";
     document.getElementById("nDisp").value = "";
     document.getElementById("data_table").value = "";
+    
+    actualizar();
 }
 
+function filter(){
+  const tipo = this.dataset.filter;
+  document.body.className="";
+  document.body.classList.add(tipo);
+}
+
+function actualizar(){
+    filters = document.querySelectorAll("[data-filter]");
+    console.log(filters);
+    filters.forEach( function(el){
+    el.addEventListener("click", filter);
+    });
+}
