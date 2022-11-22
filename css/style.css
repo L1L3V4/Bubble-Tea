@@ -456,3 +456,52 @@ form .txt_field {
   background: white;
 }
 /*Fondo imagen tabla*/
+
+/*Video de fondo*/
+section#hero {
+  height: calc(100vh - 5rem);
+  position: relative;
+}
+section#hero div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3725490196);
+  height: calc(100vh - 5rem);
+  padding: 0;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+section#hero div.fondo video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+section#hero * {
+  margin: 0;
+}
+section#hero h1,
+section#hero p,
+section#hero a {
+  color: white;
+  padding: 0.5rem;
+}
+section#hero h1 {
+  font-size: 4rem;
+  text-shadow: 0 0 3px black;
+}
+section#hero p {
+  font-size: 2rem;
+  text-shadow: 0 0 3px black;
+}
+
+/*Video de fondo*/

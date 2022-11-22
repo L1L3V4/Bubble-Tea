@@ -4,9 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Inicio | Bubble Tea</title>
 </head>
+<style>
+    /*MENU STYLE CSS*/
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        nav{
+            background-color: #320000;
+            width: 100%;
+            height: 117px;
+            
+        }
+        nav ul{
+            float: right;
+            margin-right: 32%;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 15vh;
+            margin-left: 40px;
+        }
+        nav ul li a{
+            color: white;
+            font-size: 35px;
+            font-family: "Sacramento";
+            
+        }
+    /*MENU STYLE CSS*/
+    h1 {
+        margin: 0;
+        padding-top: 3rem;
+        padding-left: 2rem;
+    }
+    h2{
+        margin-left: 18%;
+    }
+</style>
 <body>
+    <nav>
+        <label for="" class="logomenu">
+            <img src="img/BubbleTeaRECORTADO.png" alt="Logo">
+        </label>
     
+        <ul>
+            <li><a href="./Listadoproductos.html">Productos</a></li>
+            <li><a href="./Aboutus.html">Sobre Nosotros</a></li>
+            <li><a href="./contacto.html">Contactanos</a></li>
+        </ul>
+    
+        <label class="menu button-container">
+            <a href="login.html"><button class="button button-1">Iniciar Sesion<img src = "img/loginicon.png" alt="login" width="15%"/></button></a>
+        </label>
+    </nav>
+    
+    <section id="hero">
+        <div class="fondo">
+            <video src="img/bubbleteacorto.mp4" loop muted autoplay></video>
+        </div>
+        <div>
+            <h1>Título de página</h1>
+            <p>Subtitulo con algo de descripción larga</p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+    <h2>TÉ CON LECHE 鮮奶茶  ═════════════════════════════════════════════════╗</h2>
+    <br>
+    <br>
+    <section class='FlexContainer'>
+        <div>
+            <img src="img/tematcha.png" width="100%">
+            <br>
+            <br>
+            <h4 class="sacramento">Bubble Matcha</h4>
+            <p>Té Matcha con leche y topping</p>
+            <br>
+            <a href="FichaProducto.html"><button class="botoncompra">Hacer pedido 🛒</button></a>
+            
+        </div>
+        <div>
+            <img src="img/techai.png" width="100%">
+            <br>
+            <br>
+            <h4 class="sacramento">Bubble Chai</h4>
+            <p>Té Chai con leche y topping</p>
+            <br>
+            <a href="FichaProducto.html"><button class="botoncompra">Hacer pedido 🛒</button></a>
+        </div>
+        <div>
+            <img src="img/tetaro.png" width="100%">
+            <br>
+            <br>
+            <h4 class="sacramento">Bubble Taro</h4>
+            <p>Taro, leche y topping</p>
+            <br>
+            <a href="FichaProducto.html"><button class="botoncompra">Hacer pedido 🛒</button></a>
+        </div>
+    </section>
+    <br>
+    <br>
+</section>
 </body>
 </html>
