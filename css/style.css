@@ -275,6 +275,49 @@ form .txt_field {
   color: #FFF;
   background-color: #c57d56;
 }
+/*MENU HOVER*/
+.snip1168 a {
+  padding: 0.5em 0;
+  color: rgb(255, 255, 255);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.snip1168 a:before,
+.snip1168 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1168 a:before {
+  top: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #c57d56;
+}
+.snip1168 a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.snip1168 a:hover:before,
+.snip1168 .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.snip1168 a:hover:after,
+.snip1168 .current a:after {
+  max-width: 100%;
+}
+
 /*MENU*/
 
 /*FORMULARIO CONTACTO*/
@@ -458,11 +501,11 @@ form .txt_field {
 /*Fondo imagen tabla*/
 
 /*Video de fondo*/
-section#hero {
+section#video {
   height: calc(100vh - 5rem);
   position: relative;
 }
-section#hero div {
+section#video div {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -474,11 +517,11 @@ section#hero div {
   background-color: rgba(0, 0, 0, 0.3725490196);
   height: calc(100vh - 5rem);
   padding: 0;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(1,5px);
+          backdrop-filter: blur(1,5px);
 }
 
-section#hero div.fondo video {
+section#video div.fondo video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -486,22 +529,41 @@ section#hero div.fondo video {
   -o-object-position: center center;
      object-position: center center;
 }
-section#hero * {
+section#video * {
   margin: 0;
 }
-section#hero h1,
-section#hero p,
-section#hero a {
+section#video h1,
+section#video p,
+section#video a {
   color: white;
   padding: 0.5rem;
 }
-section#hero h1 {
-  font-size: 4rem;
+section#video h1 {
+  font-family: "Sacramento";
+  font-size: 6rem;
   text-shadow: 0 0 3px black;
 }
-section#hero p {
+section#video p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   text-shadow: 0 0 3px black;
 }
 
 /*Video de fondo*/
+
+/*Botón Compra*/
+.botoncomprasinfondo{
+  width: 15%;
+  height: 50px;
+  border: 3px solid;
+  background: #00000062;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #fab993 ;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Botón Compra*/
