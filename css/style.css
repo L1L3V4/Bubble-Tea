@@ -514,6 +514,7 @@ section#video div {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.3725490196);
   height: calc(100vh - 5rem);
   padding: 0;
@@ -522,8 +523,8 @@ section#video div {
 }
 
 section#video div.fondo video {
-  width: 100%;
-  height: 100%;
+  width:calc(max(100vh,100vw) + 20%);
+  height: calc(max(100vh,100vw) + 20%);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
