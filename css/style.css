@@ -221,7 +221,6 @@ form .txt_field {
 }
 .cosa{
   margin-left: 20px;
-  
 }
 
 /*RADIOBUTTON*/
@@ -235,46 +234,35 @@ form .txt_field {
   width: 175px;
 }
 .menu{
-  margin-left:87%;
+  margin-left:85%;
   position: relative;
-  top: -110%;
+  top: -80%;
 }
 .button-container {
   display: flex;
   width: 11%;
-  min-height: 20vh;
+  min-height: 8vh;
 }
-
-.button {
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
-
-  position: absolute;
-  top: 1em;
-  right: 0;
-  bottom: 3em;
-  left: 0;
-
-  padding: 5.3px;
-  border-radius: 8px;
-  color: #212121;
-  font-size: 30px;
+.botonmenu {
+  font-family: 'Open Sans', sans-serif;
+  color: #320000;
+  background-color: rgba(255, 255, 255, 1);
+  border: 3px solid #320000;
   cursor: pointer;
-  transition: 0.4s;
-  font-family: "Sacramento";
-}
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 200px;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;}
 
-.button-1 {
-  color: #c57d56;
-  border: 3px solid #c57d56;
-}
+.botonmenu:hover{
+    color: #c57d56;
+    box-shadow: 0 0 20px #c57d56;
+    background-color: #320000;}
 
-.button-1:hover {
-  color: #FFF;
-  background-color: #c57d56;
-}
 /*MENU HOVER*/
 .snip1168 a {
   padding: 0.5em 0;
